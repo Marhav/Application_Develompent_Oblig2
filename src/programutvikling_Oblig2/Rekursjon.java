@@ -6,7 +6,6 @@ import java.util.List;
 public class Rekursjon {
 
     //Oppgave 1.1
-    //Oppgave
     //Konverter følgende metode til en løsning med rekursjon:
     static int forSum(int x) {
         int sum = 0;
@@ -65,6 +64,19 @@ public class Rekursjon {
         }
         return minTall(ints, length-1);
     }
+    //-------------------------------------------
+    static int magiskMetode(int[]tabell, int startIndex){
+        if(startIndex == tabell.length-1){
+            return tabell[startIndex];
+        }
+
+        int current = tabell[startIndex];
+
+        int minRightOfCurrent = magiskMetode(tabell, startIndex);
+
+        return Math.min(current, minRightOfCurrent);
+    }
+    //-------------------------------------------
     //Oppgave 1.5
     //Implementer en metode som søker etter et gitt heltall i en heltallstabell. Bruk rekursjon.
     // Returner posisjonen til verdien i tabellen eller -1 hvis verdien ikke er i tabellen.
@@ -84,7 +96,7 @@ public class Rekursjon {
     //Oppgave 18.14
     //Euler's Number:
     public static double eulersNumber(int n){
-        double e = 1;
+        double e = 2;
 
         if(n == 1){
             return e;
@@ -101,6 +113,6 @@ public class Rekursjon {
 
     //Oppgave 18.15 Recursive backtracking
     //Eight Queens:
-     gi
+
 }
 

@@ -40,5 +40,32 @@ public class Main {
         System.out.println("Ekstraoppgave 18.14");
         double eulersNumber = Rekursjon.eulersNumber(18);
         System.out.println("\tEulers Nummer er: " + eulersNumber);
+
+        System.out.println("------Generisk Programmering Oppgaver------");
+        //Oppgave 2.1
+        System.out.println("Oppgave 2.1");
+        Integer[] list2 = {4,3,7,2,1,8,2};
+        GeneriskProgrammering<Integer> ints = new GeneriskProgrammering<>();
+        ints.writeArray(list2);
+
+        //Oppgave 2.2
+        System.out.println("Oppgave 2.2");
+        ints.reverseArray(list2);
+        ints.writeArray(list2);
+
+        //Oppgave 2.3
+        MyArrayList<Integer> list3 = new MyArrayList<>();
+        if(list3.setElement(3)){
+            System.out.println("list3 is full!");
+        }
+        if(list3.setElement(6)){
+            System.out.println("list3 is full!");
+        }
+        if(list3.setElement(10)){
+            System.out.println("list3 is full!");
+        }
+
+        int arrayLength = list3.size();
+        System.out.println(arrayLength);
     }
 }
