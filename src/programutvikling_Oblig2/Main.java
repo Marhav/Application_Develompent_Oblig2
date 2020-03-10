@@ -67,5 +67,7 @@ public class Main {
 
         int arrayLength = list3.size();
         System.out.println(arrayLength);
+
+
     }
 }
